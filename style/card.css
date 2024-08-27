@@ -1,0 +1,41 @@
+.container > main > .row-card{
+    width: 100%;
+    padding: 40px 180px;
+    background-color: var(--body color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container  > main > .row-card > .card{
+    width: 47%;
+    /* height: 500px; */
+    /* text-align: center; */
+    margin: 20px 0;
+    /* background-color: aqua; */
+    /* overflow: hidden; */
+}
+.container  > main > .row-card > .card >img{
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.container  > main > .row-card > .card > a{
+    width: 100%;
+    padding: 15px 0;
+    display: grid;
+    text-align: center;
+    font-size: 15.2px;
+    color: #A9CBF1;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.container  > main > .row-card > .card > a:nth-child(2){
+    font-size: 14px;
+}
+.container  > main > .row-card > .card > a:hover{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}

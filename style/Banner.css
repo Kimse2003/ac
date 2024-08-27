@@ -1,0 +1,82 @@
+/* Banner */
+.container > main > .banner-image {
+    width: 100%;
+    padding: var(--padd);
+    background-color: var(--banner-color);
+    height: 415px;
+    box-shadow: 0 2px 10px black;
+    position: relative;
+}
+.container > main > .banner-image > .image {
+    width: 100%;
+    height: 100%;
+    animation: imageRender 40s linear infinite;
+    animation-timing-function :cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes imageRender {
+    0%{
+        background-image: url(/assets/img/Banner-01.jpg);
+        background-size: cover;
+    }   
+    20%{
+        background-image: url(/assets/img/Banner-02.jpg);
+        background-size: cover;
+    }
+    40%{
+        background-image: url(/assets/img/Banner-03.jpg);
+        background-size: cover;
+    }
+    60%{
+        background-image: url(/assets/img/Banner-04.jpg);
+        background-size: cover;
+    }
+    80%{
+        background-image: url(/assets/img/Banner-05.jpg);
+        background-size: cover;
+    }
+    100%{
+        background-image: url(/assets/img/Banner-01.jpg);
+        background-size: cover;
+    }      
+}
+
+
+/* icone under banner */
+.container > main > .icon-image{
+    width: 100%;
+    /* height: 200px; */
+    background-color:var(--menu-color);
+}
+.container > main > .icon-image > ul{
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+    list-style: none;
+}
+.container > main > .icon-image > ul > li{
+    text-align: center;
+    margin: 0 30px ;
+    position: relative;
+}
+.container > main > .icon-image > ul > li > a > span{
+    font-size: 14px;
+    font-weight: 600;
+}
+.container > main > .icon-image > ul > li > a > img{
+    padding-bottom: 20px;
+    width: 42px;
+    height: 62px;
+}
+.container > main > .icon-image > ul > li:hover > a {
+    text-decoration: underline;
+}
+.container > main > .icon-image > ul > li:first-child::after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 0;
+    right: 25px;
+    border-radius: 50%;
+    background-color: red;
+}
